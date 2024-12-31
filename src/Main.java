@@ -57,5 +57,19 @@ public class Main {
             System.out.println(e.getName() + " " + e.getId()  + " " + e.getEmail());
         });
 
+
+        System.out.println("================= Using Comparable  ===================");
+
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(new Student("zermit" ,342234));
+        studentList.add(new Student("Rahuk" ,143435));
+        studentList.add(new Student("random Person" ,674433));
+        studentList.add(new Student("sumit Don" ,232366));
+
+        Collections.sort(studentList);
+
+        studentList.forEach((student) -> System.out.println(student.getStudentName() + " " + student.getRollNumber()));
+
+
     }
 }
